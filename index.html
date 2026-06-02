@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Akhir Pekan Coffee — Premium Event Coffee Catering</title>
 <meta name="description" content="Premium specialty coffee catering for weddings, corporate events & celebrations across Klang Valley. Trusted by 100+ events. WhatsApp for a quote today.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%232A1810'/><text y='.9em' font-size='72' x='50%' dominant-baseline='auto' text-anchor='middle'>☕</text></svg>">
+<meta name="theme-color" content="#2A1810">
+<meta property="og:title" content="Akhir Pekan Coffee — Premium Coffee Catering Klang Valley">
+<meta property="og:description" content="Specialty coffee catering for weddings, corporate events & celebrations. 100+ events served across Klang Valley. Get a quote today!">
+<meta property="og:image" content="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223272/IMG_6636_2_vs6omb.jpg">
+<meta property="og:url" content="https://alkindykev.github.io/akhirpekancoffee/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -369,7 +377,7 @@ body::before{
 
 /* FINAL CTA */
 #final-cta{position:relative;padding:9rem 5vw;text-align:center;overflow:hidden;background:var(--ink)}
-.cta-bg{position:absolute;inset:0;background:url('/Users/kevinalkindy/Downloads/IMG_5810 3.jpg') center/cover;opacity:.25}
+.cta-bg{position:absolute;inset:0;background:url('https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223269/IMG_5810_2_vynpyr.jpg') center/cover;opacity:.25}
 .cta-content{position:relative;z-index:1}
 .cta-content h2{
   font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.5rem);
@@ -555,6 +563,19 @@ footer{
 <body>
 
 <!-- WA FAB -->
+<a class="wa-fab" href="https://wa.me/60175845707?text=Hi%20Akhir%20Pekan%20Coffee!%20I'd%20like%20to%20enquire%20about%20coffee%20catering%20for%20my%20event." target="_blank" rel="noopener" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(13,10,7,.95);align-items:center;justify-content:center;cursor:zoom-out" onclick="closeLightbox()">
+  <img id="lbImg" src="" alt="" style="max-width:90vw;max-height:90vh;object-fit:contain;box-shadow:0 24px 80px rgba(0,0,0,.6)">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.5rem;right:2rem;background:none;border:none;color:rgba(255,255,255,.6);font-size:2rem;cursor:pointer;line-height:1">×</button>
+  <button id="lbPrev" onclick="event.stopPropagation();shiftLb(-1)" style="position:absolute;left:1.5rem;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:white;font-size:1.8rem;width:48px;height:48px;cursor:pointer;border-radius:50%">‹</button>
+  <button id="lbNext" onclick="event.stopPropagation();shiftLb(1)" style="position:absolute;right:1.5rem;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:white;font-size:1.8rem;width:48px;height:48px;cursor:pointer;border-radius:50%">›</button>
+  <span id="lbCount" style="position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35)"></span>
+</div>
+
 <!-- MOBILE DRAWER -->
 <div class="mobile-drawer" id="drawer">
   <a href="#experience" onclick="closeD()">Experience</a>
@@ -614,11 +635,11 @@ footer{
 <div id="trust">
   <div class="trust-item rv"><span class="trust-num" data-t="100" data-s="+">100+</span><span class="trust-label">Events Served</span></div>
   <div class="trust-sep rv"></div>
-  <div class="trust-item rv" data-d="1"><span class="trust-num" data-t="20000" data-s="+">50k+</span><span class="trust-label">Cups Brewed</span></div>
+  <div class="trust-item rv" data-d="1"><span class="trust-num" data-t="20000" data-s="+">20,000+</span><span class="trust-label">Cups Brewed</span></div>
   <div class="trust-sep rv" data-d="1"></div>
   <div class="trust-item rv" data-d="2"><span class="trust-num" data-t="5" data-s=" ★">5 ★</span><span class="trust-label">Average Rating</span></div>
   <div class="trust-sep rv" data-d="2"></div>
-  <div class="trust-item rv" data-d="3"><span class="trust-num" data-t="2" data-s="+">3+</span><span class="trust-label">Years Experience</span></div>
+  <div class="trust-item rv" data-d="3"><span class="trust-num" data-t="3" data-s="+">3+</span><span class="trust-label">Years Experience</span></div>
 </div>
 
 <!-- CLIENT LOGOS -->
@@ -637,35 +658,35 @@ footer{
   </div>
   <div class="exp-grid">
     <div class="exp-card feature rv">
-      <img src="/Users/kevinalkindy/Downloads/IMG_7151.jpg" alt="Wedding guests enjoying coffee" loading="lazy">
+      <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223266/IMG_7151_u2rm7o.jpg" alt="Wedding guests enjoying coffee" loading="lazy">
       <div class="exp-card-body">
         <h3>It Becomes the Highlight of the Event</h3>
         <p>Guests gather, conversations flow naturally, and your coffee bar becomes the most photographed corner of your event.</p>
       </div>
     </div>
     <div class="exp-card rv" data-d="1">
-      <img src="/Users/kevinalkindy/Downloads/IMG_7154.jpg" alt="Barista pouring latte art" loading="lazy">
+      <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223264/IMG_7154_rfwonh.jpg" alt="Barista pouring latte art" loading="lazy">
       <div class="exp-card-body">
         <h3>Live Brewing, Live Energy</h3>
         <p>Watching a barista craft your cup is an experience no pre-made beverage can replicate.</p>
       </div>
     </div>
     <div class="exp-card rv" data-d="1">
-      <img src="/Users/kevinalkindy/Downloads/IMG_6636 2.JPG" alt="Elegant coffee setup" loading="lazy">
+      <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223272/IMG_6636_2_vs6omb.jpg" alt="Elegant coffee setup" loading="lazy">
       <div class="exp-card-body">
         <h3>Aesthetics That Elevate</h3>
         <p>Our setups complement your theme — minimal, elegant, and always photogenic.</p>
       </div>
     </div>
     <div class="exp-card rv" data-d="2">
-      <img src="/Users/kevinalkindy/Downloads/IMG_7156.jpg" alt="Happy guests" loading="lazy">
+      <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223267/IMG_7156_hatntr.jpg" alt="Happy guests" loading="lazy">
       <div class="exp-card-body">
         <h3>Everyone Stays Happy</h3>
         <p>Great coffee keeps energy high and conversations going through long events.</p>
       </div>
     </div>
     <div class="exp-card rv" data-d="2">
-      <img src="/Users/kevinalkindy/Downloads/IMG_3552 copy.jpg" alt="Corporate coffee" loading="lazy">
+      <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223266/IMG_3552_copy_m6hqpc.jpg" alt="Corporate coffee" loading="lazy">
       <div class="exp-card-body">
         <h3>Your Brand, Everywhere It Shows</h3>
         <p>Custom stickers on cups and coffee carts, branded sleeves, themed setups — every touchpoint tailored to your event's identity.</p>
@@ -691,99 +712,99 @@ footer{
     </div>
   </div>
   <div class="gal-masonry" id="galGrid">
-    <div class="gal-item rv" data-c="wedding">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223272/IMG_6636_2_vs6omb.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Sekamat Grand Palace Kajang</span>
     </div>
-    <div class="gal-item rv" data-c="wedding">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223280/wedding_rumahabangjamil_twunsz.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Rumah Abang Jamil Shah Alam</span>
     </div>
-    <div class="gal-item rv" data-c="wedding">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223263/engagement_dfyzgq.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Engagement · KL</span>
     </div>
-    <div class="gal-item rv" data-c="wedding">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223281/IMG_6960_ibyk7r.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Gabion Hall KL</span>
     </div>
-      <div class="gal-item rv" data-c="wedding">
+      <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223262/glasshouse_hlnwf3.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Glasshouse at Seputeh KL</span>
     </div>
-      <div class="gal-item rv" data-c="wedding">
+      <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223274/wedding_forestvalley_vxwczw.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Forest Valley Cheras</span>
     </div>
-      <div class="gal-item rv" data-c="wedding">
+      <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223274/wedding_semenyih_jtrrjz.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Kajang</span>
     </div>
-      <div class="gal-item rv" data-c="wedding">
+      <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223262/abang_jamil_KL_ialqzn.heic" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · JIWA KL</span>
     </div>
-      <div class="gal-item rv" data-c="wedding">
+      <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223263/coffee_bar_arina_us67ra.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · The Hub @ A-Park Puchong</span>
     </div>
-      <div class="gal-item rv" data-c="wedding">
+      <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223267/wedding_alam_maya_abhaeh.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Alam Maya Kajang</span>
     </div>
-    <div class="gal-item rv" data-c="wedding">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="wedding">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223272/IMG_6692_m5o4mn.jpg" alt="Wedding" loading="lazy">
       <span class="gal-label">Wedding · Dewan Orkid Wisma PKPS Shah Alam</span>
     </div>
-    <div class="gal-item rv" data-c="corp">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="corp">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223271/IMG_6592_rguqaj.jpg" alt="Gathering" loading="lazy">
       <span class="gal-label">Internal Gathering · Menara TM Bangsar</span>
     </div>
-    <div class="gal-item rv" data-c="corp">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="corp">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223264/IMG_5973_edwzgw.jpg" alt="Open House" loading="lazy">
       <span class="gal-label">Open House · Kompleks Operasi LATAR Expresswayy</span>
     </div>
-    <div class="gal-item rv" data-c="corp" data-d="1">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="corp" data-d="1">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223265/IMG_7160_jfyglb.jpg" alt="Openhouse TNB 25" loading="lazy">
       <span class="gal-label">Open House · Dewan Kelab Kilat TNB Bangsar</span>
     </div>
-    <div class="gal-item rv" data-c="corp" data-d="1">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="corp" data-d="1">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223263/corp_KWSP_r6vj2d.jpg" alt="Openhouse TNB 25" loading="lazy">
       <span class="gal-label">Internal Event · Menara KWSP Shah Alam</span>
     </div>
-    <div class="gal-item rv" data-c="private" data-d="2">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="private" data-d="2">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223269/IMG_5810_2_vynpyr.jpg" alt="Open House" loading="lazy">
       <span class="gal-label">Open House · Bukit Damansara</span>
     </div>
-    <div class="gal-item rv" data-c="private" data-d="2">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="private" data-d="2">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223262/IMG_5553_3_idsayf.jpg" alt="Aqiqah" loading="lazy">
       <span class="gal-label">Majlis Aqiqah · Kinrara Puchong</span>
     </div>
-    <div class="gal-item rv" data-c="corp" data-d="1">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="corp" data-d="1">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223264/IMG_6060_sms5qz.jpg" alt="Openhouse TNB" loading="lazy">
       <span class="gal-label">Open House · TNB HQ Bangsar</span>
     </div>
-    <div class="gal-item rv" data-c="conf" data-d="2">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="conf" data-d="2">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223266/IMG_3552_copy_m6hqpc.jpg" alt="Conference setup" loading="lazy">
       <span class="gal-label">Dental Conference · HALEON KLCC</span>
     </div>
-    <div class="gal-item rv" data-c="conf" data-d="2">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="conf" data-d="2">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223282/conf_haleon_agb0sd.jpg" alt="Conference setup" loading="lazy">
       <span class="gal-label">Dental Conference · HALEON KLCC</span>
     </div>
-    <div class="gal-item rv" data-c="private">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="private">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223271/IMG_6126_lqcch3.jpg" alt="Open House" loading="lazy">
       <span class="gal-label">Open House · Verdale Residence Kajang</span>
     </div>
-    <div class="gal-item rv" data-c="private">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="private">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223266/open_house_denai_alam_nxhmfu.jpg" alt="Open House" loading="lazy">
       <span class="gal-label">Open House · Denai Alam</span>
     </div>
-    <div class="gal-item rv" data-c="corp">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="corp">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223269/suruhanjaya-enhanve_bcufb2.png" alt="Open House" loading="lazy">
       <span class="gal-label">Open House · Suruhanjaya Sekuriti Malaysia</span>
     </div>
-    <div class="gal-item rv" data-c="edu">
+    <div class="gal-item rv" onclick="openLightbox(this)" data-c="edu">
       <img src="https://res.cloudinary.com/dwuaa2w4k/image/upload/v1778223555/SMKusj23_yh7kfc.jpg" alt="Education" loading="lazy">
       <span class="gal-label">Internal Event · SMK USJ 23</span>
     </div>
@@ -1045,7 +1066,45 @@ function gFilter(cat,btn){
   document.querySelectorAll('.gal-item').forEach(item=>{
     item.style.display=(cat==='all'||item.dataset.c===cat)?'':'none';
   });
+  lbImages = getVisibleGalleryImages();
 }
+
+/* LIGHTBOX */
+let lbImages=[];let lbIndex=0;
+function getVisibleGalleryImages(){
+  return [...document.querySelectorAll('.gal-item')]
+    .filter(el=>el.style.display!=='none')
+    .map(el=>({src:el.querySelector('img').src,label:el.querySelector('.gal-label')?.textContent||''}));
+}
+function openLightbox(el){
+  lbImages=getVisibleGalleryImages();
+  const src=el.querySelector('img').src;
+  lbIndex=lbImages.findIndex(i=>i.src===src);
+  showLb();
+  document.getElementById('lightbox').style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function showLb(){
+  const lb=lbImages[lbIndex];
+  document.getElementById('lbImg').src=lb.src;
+  document.getElementById('lbCount').textContent=(lbIndex+1)+' / '+lbImages.length+(lb.label?' · '+lb.label:'');
+}
+function shiftLb(dir){
+  lbIndex=(lbIndex+dir+lbImages.length)%lbImages.length;
+  showLb();
+}
+function closeLightbox(){
+  document.getElementById('lightbox').style.display='none';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  const lb=document.getElementById('lightbox');
+  if(lb.style.display==='flex'){
+    if(e.key==='ArrowRight')shiftLb(1);
+    else if(e.key==='ArrowLeft')shiftLb(-1);
+    else if(e.key==='Escape')closeLightbox();
+  }
+});
 
 /* ANIMATED COUNTERS */
 function animNum(el,target,suffix){
